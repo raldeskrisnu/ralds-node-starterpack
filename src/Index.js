@@ -1,12 +1,12 @@
-import express from 'express';
-import mainConfig from './config/MainConfig';
-import errorConfig from './config/ErrorConfig';
+import appConfig from './config/MainConfig';
 import routeConfig from './config/RoutesConfig';
+import errorConfig from './config/ErrorConfig';
+import express from 'express';
 
 const app = express();
 
-mainConfig.init(app, express);
-errorConfig.init(app);
+appConfig.init(app, express);
 routeConfig.init(app);
+errorConfig.init(app);
 
 module.exports = app;

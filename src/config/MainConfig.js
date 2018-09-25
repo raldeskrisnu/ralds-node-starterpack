@@ -1,5 +1,3 @@
-// *** main dependencies *** //
-import path from 'path';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import flash from 'connect-flash';
